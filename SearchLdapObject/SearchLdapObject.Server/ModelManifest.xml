@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.Server\Properties\Service.lsml" Checksum="2909229D0DE79C688617A58FB6FF834E1518FC9880C2111392CCE2E453AA19B0" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.Server\Properties\DataSources\ApplicationData.lsml" Checksum="986A4E2C3BC71E61B26C49DBB7451F9203AA85AB5825740AC6E35E7095E0722C" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.Server\DataSources\ApplicationData\Items.lsml" Checksum="A1AF3C8978E73D3198FEFE851BF1AE7C0BE59A658F82C971D5ED82A8AC0E871C" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.Server\DataSources\UtilitiesData\ActiveDirectoryUsers.lsml" Checksum="2E044B8BD7806F1425646EF00151EAFB576F02894E00A0A690F15A57F19C2A2A" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.Server\Properties\DataSources\UtilitiesData.lsml" Checksum="0A08A649934406F1070C229AA612525AFFDD489844C53D485A822ECAB792339C" />
+  </Documents>
+</ModelDocumentManifest>

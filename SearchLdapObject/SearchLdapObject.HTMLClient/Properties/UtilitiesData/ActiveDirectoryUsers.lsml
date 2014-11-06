@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+  Name="LightSwitchApplication.SearchLdapObject.HTMLClient" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <Application.Attributes>
+    <Partial />
+  </Application.Attributes>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:ActiveDirectoryUser" />
+      <DefaultScreen
+        Value="ViewActiveDirectoryUser">
+        <DefaultScreen.Attributes>
+          <ScreenParameterMapping
+            ScreenParameter="ViewActiveDirectoryUser/Properties[ActiveDirectoryUser]" />
+        </DefaultScreen.Attributes>
+      </DefaultScreen>
+    </EntityType.Attributes>
+  </EntityType>
+</Application>

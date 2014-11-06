@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityContainer
+    Name="UtilitiesData"
+    DataProvider="AstoriaDataProvider">
+    <EntityContainer.Attributes>
+      <Partial
+        IsPrimary="True" />
+    </EntityContainer.Attributes>
+    <SubmitOperation
+      Name="SaveChanges" />
+  </EntityContainer>
+  <DataService
+    Name="UtilitiesDataDataService"
+    EntityContainer="UtilitiesData">
+    <DataService.Attributes>
+      <CsdlEntityContainer
+        Format="Json"
+        Name="Utilities"
+        Namespace="LightSwitchApplication.Models" />
+      <Partial
+        IsPrimary="True" />
+    </DataService.Attributes>
+    <DataService.ConnectionProperties>
+      <ConnectionProperty
+        Name="ConnectionStringGuid"
+        Value="6384d21c-1cf7-4e8b-9827-8a28527f282a" />
+      <ConnectionProperty
+        Name="ProjectMetadata"
+        Value="UtilitiesData" />
+    </DataService.ConnectionProperties>
+  </DataService>
+</ServiceApplication>

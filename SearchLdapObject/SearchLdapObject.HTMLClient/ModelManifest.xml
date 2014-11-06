@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Properties\Client.lsml" Checksum="BC9CCCB9AA299151D7F5EDDE12EBEF3EC876787B6150D6C9115D9681C756AC6D" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Properties\Proxies.lsml" Checksum="E4EB41CC3527B88AC8CAE6FA552CFDFBAEDAC577E7E6A7436215D5817A6E7441" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Screens\Browse.lsml" Checksum="F6A649D2418B5D0A77C1A78BDEADCE09BF8135F81DFD78FE98B02CB0623C0008" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Screens\BrowseActiveDirectoryUsers.lsml" Checksum="1D65A592915F0E0C0A31F56898307BDC6812CA716CEC28C627F15D61250E78A0" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Screens\ViewActiveDirectoryUser.lsml" Checksum="2E7571661B226CFCE944D16A75DF7DF41DF90096BD48B7AD324BF8F115640844" />
+    <Document FullPath="C:\prj\SearchLdapObject\SearchLdapObject\SearchLdapObject.HTMLClient\Properties\UtilitiesData\ActiveDirectoryUsers.lsml" Checksum="BF2D9912FE014D1C7ED1DBD7058D80A4F83F48BB68D79BDB8FED79387AF38E91" />
+  </Documents>
+</ModelDocumentManifest>

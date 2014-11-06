@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="ActiveDirectoryUser">
+    <EntityType.Attributes>
+      <NotSearchable />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="cn"
+        PropertyType=":String">
+        <KeyProperty.Attributes>
+          <Required />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="description"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="distinguishedName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="groupType"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="sn"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="givenName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="department"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="displayName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="mail"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="objectGUID"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="objectSID"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="sAMAccountName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="sAMAccountType"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="uSNChanged"
+        PropertyType=":Int64">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="uSNCreated"
+        PropertyType=":Int64">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="whenChanged"
+        PropertyType=":DateTime">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="whenCreated"
+        PropertyType=":DateTime">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="UtilitiesData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="ActiveDirectoryUsers"
+      EntityType="ActiveDirectoryUser" />
+    <QueryOperation
+      Name="ActiveDirectoryUsers_Single"
+      ReturnType="ActiveDirectoryUser">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="cn" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="cn" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ActiveDirectoryUsers" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="cn"
+        ParameterType="Microsoft.LightSwitch:String?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'cn' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="ActiveDirectoryUsers_SingleOrDefault"
+      ReturnType="ActiveDirectoryUser">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="cn" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="cn" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ActiveDirectoryUsers" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="cn"
+        ParameterType="Microsoft.LightSwitch:String?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'cn' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="UtilitiesDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="ActiveDirectoryUsers">
+      <EntitySetMapping.Attributes>
+        <CsdlEntitySet
+          EntityTypeName="ActiveDirectoryUser"
+          EntityTypeNamespace="LightSwitchApplication.Models"
+          Name="ActiveDirectoryUsers"
+          EntityType="ActiveDirectoryUser" />
+        <CsdlProperty
+          Name="cn"
+          Property="ActiveDirectoryUser/Properties[cn]" />
+        <CsdlProperty
+          Name="description"
+          Property="ActiveDirectoryUser/Properties[description]" />
+        <CsdlProperty
+          Name="distinguishedName"
+          Property="ActiveDirectoryUser/Properties[distinguishedName]" />
+        <CsdlProperty
+          Name="groupType"
+          Property="ActiveDirectoryUser/Properties[groupType]" />
+        <CsdlProperty
+          Name="name"
+          Property="ActiveDirectoryUser/Properties[name]" />
+        <CsdlProperty
+          Name="sn"
+          Property="ActiveDirectoryUser/Properties[sn]" />
+        <CsdlProperty
+          Name="givenName"
+          Property="ActiveDirectoryUser/Properties[givenName]" />
+        <CsdlProperty
+          Name="department"
+          Property="ActiveDirectoryUser/Properties[department]" />
+        <CsdlProperty
+          Name="displayName"
+          Property="ActiveDirectoryUser/Properties[displayName]" />
+        <CsdlProperty
+          Name="mail"
+          Property="ActiveDirectoryUser/Properties[mail]" />
+        <CsdlProperty
+          Name="objectGUID"
+          Property="ActiveDirectoryUser/Properties[objectGUID]" />
+        <CsdlProperty
+          Name="objectSID"
+          Property="ActiveDirectoryUser/Properties[objectSID]" />
+        <CsdlProperty
+          Name="sAMAccountName"
+          Property="ActiveDirectoryUser/Properties[sAMAccountName]" />
+        <CsdlProperty
+          Name="sAMAccountType"
+          Property="ActiveDirectoryUser/Properties[sAMAccountType]" />
+        <CsdlProperty
+          Name="uSNChanged"
+          Property="ActiveDirectoryUser/Properties[uSNChanged]" />
+        <CsdlProperty
+          Name="uSNCreated"
+          Property="ActiveDirectoryUser/Properties[uSNCreated]" />
+        <CsdlProperty
+          Name="whenChanged"
+          Property="ActiveDirectoryUser/Properties[whenChanged]" />
+        <CsdlProperty
+          Name="whenCreated"
+          Property="ActiveDirectoryUser/Properties[whenCreated]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

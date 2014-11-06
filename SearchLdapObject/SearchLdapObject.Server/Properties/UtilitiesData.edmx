@@ -1,0 +1,34 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="LightSwitchApplication.Models" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="ActiveDirectoryUser">
+        <Key>
+          <PropertyRef Name="cn" />
+        </Key>
+        <Property Name="cn" Type="Edm.String" Nullable="false" />
+        <Property Name="description" Type="Edm.String" />
+        <Property Name="distinguishedName" Type="Edm.String" />
+        <Property Name="groupType" Type="Edm.Int32" Nullable="false" />
+        <Property Name="name" Type="Edm.String" />
+        <Property Name="sn" Type="Edm.String" />
+        <Property Name="givenName" Type="Edm.String" />
+        <Property Name="department" Type="Edm.String" />
+        <Property Name="displayName" Type="Edm.String" />
+        <Property Name="mail" Type="Edm.String" />
+        <Property Name="objectGUID" Type="Edm.String" />
+        <Property Name="objectSID" Type="Edm.String" />
+        <Property Name="sAMAccountName" Type="Edm.String" />
+        <Property Name="sAMAccountType" Type="Edm.Int32" Nullable="false" />
+        <Property Name="uSNChanged" Type="Edm.Int64" Nullable="false" />
+        <Property Name="uSNCreated" Type="Edm.Int64" Nullable="false" />
+        <Property Name="whenChanged" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="whenCreated" Type="Edm.DateTime" Nullable="false" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace="Default" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityContainer Name="Utilities" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="ActiveDirectoryUsers" EntityType="LightSwitchApplication.Models.ActiveDirectoryUser" />
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
